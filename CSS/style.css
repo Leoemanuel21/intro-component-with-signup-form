@@ -27,28 +27,36 @@ html{
 body{
     background-color: var(--Red-400);
     background-image: url(../images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main{
     width: 100vw;
+    height: 93rem;
+}
+
+article{
+    width: 99vw;
     min-height: 100vh;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
 }
 
-main > h1{
+.text{
     color: white;
-    width: 25rem;
+    width: 31rem;
+}
+
+.text > h1{
     font-size: 2.5rem;
     text-align: center;
     padding-top: 9rem;
 }
 
-main > p{
-    color: white;
-    width: 31rem;
+.text > p{
     text-align: center;
     padding-top: 2rem;
 }
@@ -68,7 +76,8 @@ main > p{
 }
 
 .try-free > p{
-    width: 20rem;
+    width: 18rem;
+    text-align: center;
 }
 
 .register{
