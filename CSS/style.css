@@ -33,7 +33,7 @@ body{
 
 main{
     width: 100vw;
-    height: 93rem;
+    height: 105rem;
 }
 
 article{
@@ -83,20 +83,20 @@ article{
 .register{
     background-color: white;
     width: 33rem;
-    height: 45rem;
+    height: 53rem;
     border-radius: 1rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
 }
 
-.forms{
-    width: 90%;
-}
-
-form{
+.info{
     display: flex;
     justify-content: center;
+}
+
+.forms{
+    width: 90%;
 }
 
 .forms input{
@@ -112,9 +112,23 @@ form{
     border: .2rem solid var(--Purple-350);
 }
 
+.error-first-name, .error-last-name, .error-email, .error-password{
+    display: none;
+    margin-bottom: 1rem;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--Red-400);
+}
+
 .button{
     background-color: var(--Green-400);
     color: white;
+}
+
+.button:hover{
+    background-color: hsla(154, 59%, 51%, 0.801);
+    cursor: pointer;
 }
 
 .terms-conditions{

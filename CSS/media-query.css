@@ -64,7 +64,6 @@
     .register{
         background-color: white;
         width: 40%;
-        height: 45rem;
         border-radius: 1rem;
         display: flex;
         flex-flow: column nowrap;
