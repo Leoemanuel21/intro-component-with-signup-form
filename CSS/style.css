@@ -97,33 +97,58 @@ article{
 
 .forms{
     width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    
 }
 
 .forms input{
     width: 100%;
-    height: 6rem;
-    border: .1rem solid var(--Purple-350);
+    height: 5rem;
     border-radius: .6rem;
+    border: none;
+    outline: none;
     padding-left: 1rem;
     margin: .5rem 0rem;
 }
 
-.forms input:hover{
+.box{
+    border: .1rem solid var(--Purple-350);
+    border-radius: .6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
     border: .2rem solid var(--Purple-350);
+}
+
+.box img{
+    padding: 1rem;
+    display: none;
 }
 
 .error-first-name, .error-last-name, .error-email, .error-password{
     display: none;
-    margin-bottom: 1rem;
     text-align: right;
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--Red-400);
 }
 
+.input-error::placeholder {
+    color: var(--Red-400);
+    opacity: 1; /* garante que a cor fique forte */
+}
+
 .button{
     background-color: var(--Green-400);
     color: white;
+    height: 6rem;
+    border-radius: .6rem;
 }
 
 .button:hover{

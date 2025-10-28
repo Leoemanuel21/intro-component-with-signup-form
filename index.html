@@ -21,22 +21,30 @@
             <section class="register">
                 <div class="info">
                     <div class="forms">
-                        <input type="text" placeholder="First Name">
-                        
+                        <div class="box">
+                            <input class="firstName" type="text" placeholder="First Name">
+                            <img class="icon-error1" src="images/icon-error.svg" alt="icon-error">
+                        </div>
                         <p class="error-first-name">First Name cannot be empty</p>
 
-                        <input type="text" placeholder="Last Name">
-                        
+                        <div class="box">
+                            <input class="lastName" type="text" placeholder="Last Name">
+                            <img class="icon-error2" src="images/icon-error.svg" alt="icon-error">
+                        </div>
                         <p class="error-last-name">Last Name cannot be empty</p>
 
-                        <input class="email" type="text" placeholder="Email Address">
-                        
+                        <div class="box">
+                            <input class="email" type="text" placeholder="Email Address">
+                            <img class="icon-error3" src="images/icon-error.svg" alt="icon-error">
+                        </div>
                         <p class="error-email">Looks like this not an email</p>
 
-                        <input type="password" placeholder="Password">
-                        
+                        <div class="box">
+                            <input class="password" type="password" placeholder="Password">
+                            <img class="icon-error4" src="images/icon-error.svg" alt="icon-error">           
+                        </div>
                         <p class="error-password">Password cannot be empty</p>
-                        
+
                         <input class="button" type="submit" onclick="verificar()" value="Claim your free trial">
                     </div>
                 </div>
